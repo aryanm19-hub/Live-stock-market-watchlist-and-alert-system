@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stock Watchlist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="auth" style="display: none;">
+    <input id="username" placeholder="Username">
+    <input id="password" type="password" placeholder="Password">
+    <input id="email" placeholder="Email">
+    <button onclick="register()">Register</button>
+    <button onclick="login()">Login</button>
+  </div>
+  
+  <div id="watchlist" style="display: none;">
+    <input id="stockSymbol" placeholder="Stock Symbol (e.g., AAPL)">
+    <button onclick="addStock()">Add Stock</button>
+    <input id="alertPrice" type="number" placeholder="Alert Price">
+    <select id="alertType">
+      <option value="above">Above</option>
+      <option value="below">Below</option>
+    </select>
+    <button onclick="setAlert()">Set Alert</button>
+    <div id="stockList"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
