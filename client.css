@@ -1,0 +1,20 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+input, button, select {
+  margin: 5px;
+  padding: 5px;
+}
+
+#stockList {
+  margin-top: 20px;
+}
+
+#stockList div {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
